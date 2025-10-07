@@ -1,16 +1,17 @@
-**1. README.md**
+1. README.md**
 
-```markdown
-# Real Estate AI Automation Agency
+markdown
+Real Estate AI Automation n8n Agency Template
 
-An MVP and model context protocol for an AI-powered front desk and automation solution for real estate businesses.
+MVP and Model Context Protocol for an AI-powered real estate automation agency using n8n, OpenAI, Airtable, and Google Calendar
 
-## Features
-
-- AI Front Desk for call/chat/appointment handling
-- Model Context Protocol schema and prompt templates
-- n8n workflow JSONs for automation
-- Setup guides and outreach messaging
+Features
+- Automated lead capture from website, ads, or platforms
+- AI-powered instant enquiry response (OpenAI integration)
+- CRM update & contact creation (Airtable, Google Sheets)
+- Event and viewing scheduling (Google Calendar)
+- Automated WhatsApp/SMS/email follow-ups
+- Modular workflow: adapt steps for your agency’s stack
 
 ## Structure
 
@@ -19,19 +20,58 @@ An MVP and model context protocol for an AI-powered front desk and automation so
 - `docs/` — Setup and business collateral
 - `assets/` — Images and diagrams
 
-## Quick Start
+ Quick Start
 
-1. Import the workflow from `n8n-workflows/ai-frontdesk-starter.json` into your n8n instance.
-2. Connect your Airtable, Google Calendar, and OpenAI accounts.
-3. Adapt the model context schema in `context-protocol/`.
-4. Use the outreach messaging and setup guide in `docs/`.
+git clone https://github.com/tosodo/Real-Estate-AI-Automation-N8N-AgencyTemplate.git
+2. Import workflows into your n8n instance
+- Use the recommended `real_estate_n8n_workflow.json`
+3. Configure integrations**
+- Set OpenAI, Airtable, Google API keys (see `.env.example`)
+- Add Twilio/WhatsApp if you want SMS or WhatsApp automation
+4. Customize triggers and logic**
+- Adapt to pull leads from your webforms, portals, or CRMs
+
+- Tech Stack & Integrations
+
+- [n8n](https://n8n.io/) – Workflow automation backbone
+- [OpenAI API](https://platform.openai.com/) – AI text/completion
+- [Airtable](https://airtable.com/) or Google Sheets – CRM/lead management
+- [Google Calendar](https://calendar.google.com/) – Event scheduling
+- [Twilio](https://www.twilio.com/) or WhatsApp API – Messaging  
+- [Gmail/SMTP] – Automated emails  
+- [Other integrations can be added as nodes]
+
+Documentation
+
+- **Setup, variables, and config details:** see [`docs/SETUP.md`](docs/SETUP.md)
+- **Workflow JSON import guide:** see [`docs/IMPORT_GUIDE.md`](docs/IMPORT_GUIDE.md)
+- **Customize workflow for your leads source:** edit trigger node in the workflow
 
 ---
-```
 
----
+## 💼 Use Cases
 
-**2. context-protocol/schema-example.json**
+- Lead capture and automatic vetting for real estate agents
+- AI-driven inquiry response (24/7)
+- Viewing appointment scheduling and reminders
+- Automated document/paperwork workflow
+- Ongoing tenant or vendor engagement
+
+Contributing
+
+We welcome PRs and improvements!
+- Please fork the repo and submit a pull request.
+- For bugs or feature requests, [open an issue](https://github.com/tosodo/Real-Estate-AI-Automation-N8N-AgencyTemplate/issues)
+
+Contact
+
+For professional integration, paid support, or consulting:<br>
+osodo@youragency.com 
+Agency: https://www.aigentforce.io
+
+Built by osodot / aigentforce.io]
+
+2. context-protocol/schema-example.json**
 
 ```json
 {
